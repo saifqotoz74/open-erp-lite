@@ -1,0 +1,17 @@
+:root{--bg:#f4f6f8;--card:#fff;--ink:#1c2733;--mut:#6b7885;--pri:#0f6b5c;--pri2:#0a4f44;--line:#dde3e8;--bad:#b3261e;--ok:#1b7f3b}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,"Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.layout{display:flex;min-height:100vh}.side{width:210px;background:var(--pri2);color:#fff;padding:14px 0;flex-shrink:0}
+.side h1{font-size:17px;margin:0 16px 14px}.side a{display:block;color:#d6ebe6;padding:10px 16px;text-decoration:none;cursor:pointer}
+.side a.on,.side a:hover{background:var(--pri);color:#fff}.main{flex:1;padding:18px;min-width:0}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:8px;flex-wrap:wrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px;margin-bottom:14px;overflow-x:auto}
+table{width:100%;border-collapse:collapse}th,td{padding:8px;border-bottom:1px solid var(--line);text-align:start;font-size:14px;white-space:nowrap}th{color:var(--mut);font-weight:600}
+button,.btn{background:var(--pri);color:#fff;border:0;border-radius:6px;padding:8px 14px;cursor:pointer;font:inherit}button.sec{background:#e6ecef;color:var(--ink)}button.bad{background:var(--bad)}button:disabled{opacity:.5}
+input,select,textarea{font:inherit;padding:8px;border:1px solid var(--line);border-radius:6px;width:100%;background:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}label{display:block;font-size:13px;color:var(--mut);margin-bottom:3px}
+.err{background:#fdecea;color:var(--bad);padding:8px 12px;border-radius:6px;margin-bottom:10px}.okmsg{background:#e7f5ec;color:var(--ok);padding:8px 12px;border-radius:6px;margin-bottom:10px}
+.badge{padding:2px 8px;border-radius:10px;font-size:12px;background:#e6ecef}.badge.paid{background:#d9f0e0;color:var(--ok)}.badge.issued,.badge.partial{background:#fff2cc}.badge.void{background:#f6d6d3;color:var(--bad)}
+.login{max-width:340px;margin:12vh auto}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.num{font-variant-numeric:tabular-nums;direction:ltr;text-align:end}
+.kpi{font-size:22px;font-weight:700}.sp{flex:1}
+@media(max-width:700px){.layout{flex-direction:column}.side{width:100%;display:flex;overflow-x:auto;padding:0}.side h1{display:none}.side a{white-space:nowrap}}
+@media print{.side,.top button,.noprint{display:none}}
