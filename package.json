@@ -1,0 +1,8 @@
+{
+  "name": "open-erp-lite",
+  "version": "0.1.0",
+  "description": "Arabic-first, configurable ERP for small and mid-size companies. Node 22+, zero dependencies.",
+  "license": "MIT",
+  "scripts": { "start": "node server.js", "test": "node --test --no-warnings *.test.js" },
+  "engines": { "node": ">=22.5" }
+}
